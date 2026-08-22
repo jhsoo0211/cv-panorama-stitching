@@ -1,14 +1,14 @@
-# Python 캐시 파일 (필수)
+# Python cache
 __pycache__/
 *.py[cod]
 
-# 문서 및 압축 파일
+# Generated documents and archives
 *.docx
 *.zip
-*.md
 
-# 파노라마 결과물 이미지 (필요 없다면)
+# Generated panorama outputs
 result_*.jpg
 
-# 만약 원본 입력 이미지도 안 올리고 싶다면 아래 주석을 푸세요
+# Input images are kept for reproducibility. Uncomment to keep them local only.
 # input_*.jpg
+
