@@ -34,7 +34,7 @@ python -m pip install -r requirements.txt
 python panorama_stitcher.py
 ```
 
-스크립트는 같은 폴더의 `input_1.jpg`, `input_2.jpg`, ... 파일을 숫자 순서로 읽습니다. EXIF 초점거리를 찾지 못하면 28/35/50mm 후보를 실행한 뒤 점수가 가장 높은 결과를 `result_panorama.jpg`로 저장합니다.
+스크립트는 같은 폴더의 `input_1.jpg`, `input_2.jpg`, ... 파일을 숫자 순서로 읽습니다. EXIF 초점거리를 찾지 못하면 28/35/50mm를 각각 적용한 뒤 점수가 가장 높은 결과를 `result_panorama.jpg`로 저장합니다.
 
 ## Tests
 
@@ -42,7 +42,7 @@ python panorama_stitcher.py
 python -m unittest test_panorama_memory.py
 ```
 
-현재 회귀 테스트 5개는 다음 경계를 확인합니다.
+현재 회귀 테스트 5개로 다음을 확인합니다.
 
 - 단일 밴드 pyramid 입력 버퍼 재사용
 - 가중치의 in-place 정규화와 합 1 보장
@@ -65,4 +65,3 @@ python -m unittest test_panorama_memory.py
 | `test_panorama_memory.py` | 메모리 회귀 테스트 5개 |
 | `input_*.jpg` | 재현용 입력 이미지 |
 | `requirements.txt` | 최소 실행 의존성 |
-
